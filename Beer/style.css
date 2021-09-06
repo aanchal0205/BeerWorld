@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.container-fluid
+{
+      
+    display: flex;
+    justify-content: center;
+    gap: 4rem;   
+    position: relative;
+    top:4rem;
+    margin-top: 3rem;
+    font-family: 'Julee', cursive;
+    margin-bottom: 6rem;
+    
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+
+.beer
+{
+    text-align: center;
+}
+
+body
+{
+    background-image: url(https://c1.wallpaperflare.com/preview/54/443/804/beer-cans-drinks-tin.jpg);
+    /* background-repeat: no-repeat;   */
+    background-size: cover;
+    height: 100%; 
+    /* background-blend-mode: luminosity; */
+    
+}
+
+.m:hover
+{
+    /* cursor:pointer; */
+  transform: scale(1.06); 
+  
+  color:rgb(189, 5, 42);
+  
+  background-color: pink;
+  box-shadow: -6px -2px 20px 2px rgb(255, 0, 200);
+}
+
+.picture:hover
+{
+    transform: scale(1.2); 
+}
+
+
+
+
+.name
+{
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+}
+
+p
+{
+    min-width: 10rem;
+    max-width: 29rem; 
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Julee', cursive;
+}
+
+.picture
+{
+    
+    /* text-align: center; */
+    border-radius: 20rem;
+    padding: 2rem;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #859197;
+}
+
+
+
+.detailsn
+{
+    text-align: center;
+    max-width:30rem;
+    font-family: 'Julee', cursive;
+
+}
+
+.row
+{
+    display: flex;
+   
+    margin-right: -15px;
+   
+    justify-content: flex-start;
+    
+    align-items: center;
+}
+
+img
+{
+    filter: drop-shadow(8px 8px 10px green);
+}
+
+
+.details
+{
+  max-width:30rem;  
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: 'Julee', cursive;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  
+}
+
+.description
+{
+    font-family: 'Julee', cursive;
+}
+
+.m
+{
+    
+    background-color: #859197;
+    color: #121111de;
+    border-radius: 3rem;
+    box-shadow: -6px -2px 20px 2px #0ff;
+    font-family: 'Julee', cursive;
+}
+
+
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    color: #fff;
+    text-shadow:
+      0 0 7px rgb(4, 131, 36),
+      0 0 10px rgb(4, 131, 36),
+      0 0 21px rgb(4, 131, 36),
+      0 0 42px rgb(4, 66, 46),
+      0 0 82px rgb(4, 66, 46),
+      0 0 92px rgb(4, 66, 46),
+      0 0 102px rgb(4, 66, 46),
+      0 0 151px rgb(4, 66, 46);
+    }20%, 24%, 55% {       
+      text-shadow: none;
+    }
+  }
+  
+
+.beer
+{
+    animation: flicker 1.5s infinite alternate; 
+    font-family: 'Rampart One', cursive;
+    font-size: 6rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    min-width: 3rem;
+    text-align: center;
+    
+    width: 100%;
+    text-align: center;
+    position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-image: url(https://media.istockphoto.com/photos/close-up-background-of-beer-with-bubbles-in-glass-picture-id1064539354?k=20&m=1064539354&s=612x612&w=0&h=hNorY0il2jnWKFKr4LpYxLasIxYRnC6lhq_jecVTSxI=);
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.htop
+{
+  font-size: 1.5rem;
+}
+
+.htop:hover
+{
+  color: aliceblue;
+}
+
+.back
+{
+  height: 2.5rem;
+  border-radius: 5rem;
+}
+
+.bottom
+{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: right;
+}
+
+.more 
+{
+    text-align: center;
+}
+
+button
+{
+    width: 10rem;
+    height: 4rem;
+    border:none;
+    background-color: rgb(168, 92, 240);
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 575px) and (min-width: 280px)  {
+
+.container-fluid
+{
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  gap:0.5rem;
+    position: relative;
+    top:0.5rem;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+}
+
+.beer
+{
+    font-size: 3rem;
+}
+
+.main
+{
+    width: 100%;
+    text-align: center;
+}
+
+.main:hover
+{
+    transform: scale(1.06);
+}
+
+.beerlist
+{
+    text-align: center;
+}
+
+.picture:hover
+{
+    transform: scale(1.04);
+}
+.m
+{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+
+
+}
